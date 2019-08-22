@@ -12,12 +12,4 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  showInput(){
-    // $(".srch").toggle(500,"swing");
-    $(".srch").animate({
-      width: "toggle"
-    });
-  }
-
 }

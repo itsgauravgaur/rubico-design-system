@@ -1,10 +1,22 @@
-.srch {
-    display: none;
+@mixin removeShadow {
+    outline: 0 !important;
+    box-shadow: none !important;
 }
 
-button {
+.srch {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     &:focus {
-        outline: 0 !important;
-        box-shadow: none !important;
+        @include removeShadow;
+    }
+}
+
+.srch-button {
+    background: black;
+    color: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    &:focus {
+        @include removeShadow;
     }
 }
