@@ -1,4 +1,4 @@
-@mixin removeShadow {
+.removeShadow {
     outline: 0 !important;
     box-shadow: none !important;
 }
@@ -6,8 +6,9 @@
 .srch {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+
     &:focus {
-        @include removeShadow;
+        @extend .removeShadow;
     }
 }
 
@@ -16,7 +17,8 @@
     color: white;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
     &:focus {
-        @include removeShadow;
+        @extend .removeShadow;
     }
 }
