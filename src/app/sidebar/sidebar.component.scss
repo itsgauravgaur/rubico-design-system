@@ -6,11 +6,20 @@
     min-width: 260px;
     top: 56px;
     left: 0;
-}
-
-.sidebar-menu a {
-    font-size: 18px;
-    color: #000;
-    display: block;
-    padding: 2px 17px;
+    background: #fff;
+    margin-left: 0;
+    border-right: 1px solid #6666;
+    transition: left .4s ease;
+    .sidebar-menu {
+        padding-top: 16px;
+        a {
+            font-size: 13px;
+            color: rgb(115, 132, 154);
+            display: block;
+            padding: 6px 20px 6px 16px;
+            line-height: 16.25px;
+            opacity: 1;
+            transition: opacity .7s ease;
+        }
+    }
 }
