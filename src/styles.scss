@@ -5,3 +5,20 @@ button:focus {
     outline: 0 !important;
     box-shadow: none !important;
 }
+
+a:hover {
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 20px;
+    margin-left: 261px;
+    transition: margin-left .8s ease;
+    .main-heading {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: rgb(2, 8, 20);
+        font-size: 64px;
+        font-weight: 700;
+    }
+}
