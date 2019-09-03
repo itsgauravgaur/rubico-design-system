@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RdsServicesService } from '../service/rds-services.service'
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  comp:any;
+
+  constructor(public rdsService: RdsServicesService) { 
+    this.comp = this.rdsService.componentList;
+  }
 
   ngOnInit() {
+    
   }
+ 
 
 }
