@@ -10,6 +10,7 @@ import { BannerComponent } from './content-area/banner/banner.component';
 import { AboutUsComponent } from './content-area/about-us/about-us.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './content-area/home/home.component';
+import { ComponentMainComponent } from './components/component-main/component-main.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './content-area/home/home.component';
     ContentAreaComponent,
     BannerComponent,
     AboutUsComponent,
-    HomeComponent
+    HomeComponent,
+    ComponentMainComponent
   ],
   imports: [
     BrowserModule,
