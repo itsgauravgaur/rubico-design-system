@@ -12,6 +12,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './content-area/home/home.component';
 import { ComponentMainComponent } from './components/component-main/component-main.component';
 
+
+import { HighlightModule } from 'ngx-highlightjs';
+
+import scss from 'highlight.js/lib/languages/scss';
+import typescript from 'highlight.js/lib/languages/typescript';
+
+
+/**
+ * Import every language you wish to highlight here
+ * NOTE: The name of each language must match the file name its imported from
+ */
+export function hljsLanguages() {
+  return [
+    {name: 'typescript', func: typescript},
+    {name: 'scss', func: scss}
+  ];
+}
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +44,10 @@ import { ComponentMainComponent } from './components/component-main/component-ma
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HighlightModule.forRoot({
+      languages: hljsLanguages
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
