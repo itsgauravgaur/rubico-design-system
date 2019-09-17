@@ -39,7 +39,7 @@ $(".sidebar").css({
 }
 
   checksize () {
-    $(window).on('resize load', function() { 
+    $(window).on('resize load', function() {
       this.screenWidth = $(window).width();
       if(this.screenWidth < 768) {
         this.hideSidebar();
@@ -53,11 +53,11 @@ $(".sidebar").css({
   toggleSidebar() {
     if($(".sidebar").css('left') == '0px'){
       this.hideSidebar();
-    }else {    
+    }else {
       this.showSidebar();
-      
+
     }
-  }  
+  }
 }
 
 

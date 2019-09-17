@@ -24,6 +24,7 @@
         "jquery": "^3.4.1",
         "ng2-prism": "^2.3.2",
         "ngx-highlightjs": "^3.0.3",
+        "ngx-monaco-editor": "^8.0.0",
         "popper": "^1.0.1",
         "prismjs": "^1.17.1",
         "rxjs": "~6.4.0",
