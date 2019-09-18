@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editor.component.scss']
 })
 export class EditorComponent {
-  editorOptions = {theme: 'vs-light', language: 'javascript'};
+  editorOptions = {theme: 'vs-dark', language: 'javascript'};
   code: string =
 `
 /**
